@@ -1,9 +1,10 @@
+#!/usr/lib/ruby
+
 require 'nokogiri'
-require 'open-uri'
+require 'open_uri_redirections'
 
 html = open("https://flatironschool.com/") 
-html = open("https://flatironschool.com/")
 
 doc = Nokogiri::HTML(html)
 
-doc.css(".headline-26OIBN") 
+doc.css(".container-1cfI6E").text
